@@ -1,4 +1,4 @@
-from project_name import main
+from wordle import main
 
 
 def test_add():
@@ -9,6 +9,6 @@ def test_add():
 
 
 def test_to_sentence():
-    assert main.to_sentence('apple') == 'Apple.'
-    assert main.to_sentence('Apple trees') == 'Apple trees.'
-    assert main.to_sentence('Apple trees.') == 'Apple trees.'
+    assert main.to_sentence("apple") == "Apple."
+    assert main.to_sentence("Apple trees") == "Apple trees."
+    assert main.to_sentence("Apple trees.") == "Apple trees."
