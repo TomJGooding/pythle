@@ -3,24 +3,30 @@
 ![GitHub issues by-label](https://img.shields.io/github/issues/TomJGooding/python-project-template/bug?label=bug%20reports)
 ![GitHub issues by-label](https://img.shields.io/github/issues/TomJGooding/python-project-template/enhancement?label=feature%20requests)
 
-# Project Title
+# Python Wordle
 
-Brief description of the project in a few sentences. Add a screenshot showcasing the project (see instructions below in the Usage section).
+A terminal-based version of the popular word-guessing game Wordle, built with Python. Created as my first GitHub project!
+
+- [ ] TODO Add screenshot
 
 ## Table of Contents
 
+<!--
 - [About](#about)
   - [Built With](#built-with)
 - [Features](#features)
+-->
+
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Contributors](#contributors)
+<!-- [Contributors](#contributors) -->
 - [Acknowledgements](#acknowledgements)
 - [Licence](#licence)
 
+<!--
 ## About
 
 Provide a longer description of the project here.
@@ -36,40 +42,25 @@ If the project has a lot of features, list them here.
 - Feature 1
 - Feature 2
 - Feature 3
+-->
 
 ## Getting Started
 
-Before you go any further, [ensure you have Python and that the expected version is available from your command line](https://packaging.python.org/en/latest/tutorials/installing-packages/#ensure-you-can-run-python-from-the-command-line). 
+Before you go any further, [ensure you have Python and that the expected version is available from your command line](https://packaging.python.org/en/latest/tutorials/installing-packages/#ensure-you-can-run-python-from-the-command-line).
 
 If you do not have Python, please install the latest 3.x version from [python.org](https://www.python.org/).
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
+- [ ] TODO Add prerequisites
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+- [ ] TODO Add installation instructions
 
 ## Usage
 
+<!--
 Use this space to show useful examples of how the project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then add it to your README using the following syntax:
@@ -77,6 +68,9 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     ```md
     ![alt text](assets/images/screenshot.png)
     ```
+-->
+
+- [ ] TODO Add usage examples with screenshots
 
 ## Contributing
 
@@ -95,9 +89,11 @@ If you're looking for a way to contribute, you can scan through the existing iss
 
 Please take a moment to read the [Contribution Guidelines](CONTRIBUTING.md), to help make the process easy and effective for everyone involved.
 
+<!---
 ## Contributors
 
 List your contributors, if any, with links to their GitHub profiles.
+-->
 
 ## Acknowledgements
 
@@ -112,4 +108,3 @@ If you followed tutorials, include links to those here as well.
 ## Licence
 
 Licensed under the [GNU General Public License v3.0](LICENSE).
-
