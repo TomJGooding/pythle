@@ -1,4 +1,10 @@
-from wordle.wordle import player_stats_str, guess_count_str, guess_score
+from wordle.wordle import (
+    player_stats_str,
+    guess_count_str,
+    guess_score,
+    print_guess_score,
+    print_all_guesses,
+)
 
 
 def test_player_stats_str():
@@ -64,4 +70,36 @@ def test_guess_score():
     ]
 
 
-print(guess_score("ABCDE", "EDCBA"))
+def test_print_guess_score(capfd):
+    print_guess_score(
+        [{"A": "green"}, {"A": "green"}, {"A": "green"}, {"A": "green"}, {"A": "green"}]
+    )
+    out, err = capfd.readouterr()
+    assert (
+        out
+        == "\033[42m A \033[0;0m"
+        + "\033[42m A \033[0;0m"
+        + "\033[42m A \033[0;0m"
+        + "\033[42m A \033[0;0m"
+        + "\033[42m A \033[0;0m"
+    )
+
+
+def test_print_all_guesses(capfd):
+    print_all_guesses(["AAAAA", "BBBBB"], "ZZZZZ")
+    out, err = capfd.readouterr()
+    assert (
+        out
+        == "\033[44m A \033[0;0m"
+        + "\033[44m A \033[0;0m"
+        + "\033[44m A \033[0;0m"
+        + "\033[44m A \033[0;0m"
+        + "\033[44m A \033[0;0m"
+        + "\n"
+        + "\033[44m B \033[0;0m"
+        + "\033[44m B \033[0;0m"
+        + "\033[44m B \033[0;0m"
+        + "\033[44m B \033[0;0m"
+        + "\033[44m B \033[0;0m"
+        + "\n"
+    )
