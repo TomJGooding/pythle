@@ -25,6 +25,8 @@ Created as my first GitHub project!
 
 ### Prerequisites
 
+**A terminal with support for [ANSI colours](https://en.wikipedia.org/wiki/ANSI_escape_code#Colors) is required.**
+
 Before you go any further, [ensure you have Python and that the expected version is available from your command line](https://packaging.python.org/en/latest/tutorials/installing-packages/#ensure-you-can-run-python-from-the-command-line).
 
 If you do not have Python, please install the latest 3.x version from [python.org](https://www.python.org/) or refer to the [Installing Python](https://docs.python-guide.org/starting/installation/#installation) section of the Hitchhiker’s Guide to Python.
