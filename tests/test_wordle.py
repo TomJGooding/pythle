@@ -1,49 +1,39 @@
 from wordle.wordle import (
-    player_stats_str,
-    guess_count_str,
     guess_score,
-    print_guess_score,
-    print_all_guesses,
+    display_guess_score,
+    display_all_guess_scores,
+    display_title_art,
+    PlayerStats,
+    display_player_stats,
 )
 
-
-def test_player_stats_str():
-    assert (
-        player_stats_str(0, 0, 0)
-        == """
-====================================
-            STATISTICS
-        0 Played, 0% Wins
-        Current Streak is 0
-====================================
 """
-    )
-    assert (
-        player_stats_str(2, 1, 0)
-        == """
-====================================
-            STATISTICS
-        2 Played, 50% Wins
-        Current Streak is 0
-====================================
+GAME LOGIC TESTS
 """
-    )
-    assert (
-        player_stats_str(5, 5, 5)
-        == """
-====================================
-            STATISTICS
-        5 Played, 100% Wins
-        Current Streak is 5
-====================================
-"""
-    )
 
 
-def test_guess_count_str():
-    assert guess_count_str([]) == "(1 / 6)"
-    assert guess_count_str(["WORDS"]) == "(2 / 6)"
-    assert guess_count_str(["WORDS", "WORDS", "WORDS", "WORDS", "WORDS"]) == "(6 / 6)"
+def test_playerstats_default_values():
+    player_stats = PlayerStats()
+    assert player_stats.games_played == 0
+    assert player_stats.wins == 0
+    assert player_stats.win_streak == 0
+
+
+def test_playerstats_add_values():
+    player_stats = PlayerStats(3, 2, 1)
+    assert player_stats.games_played == 3
+    assert player_stats.wins == 2
+    assert player_stats.win_streak == 1
+
+
+def test_playerstats_win_ratio_when_zero_games_played():
+    player_stats = PlayerStats()
+    assert player_stats.win_ratio() == 0
+
+
+def test_playerstats_win_ratio():
+    player_stats = PlayerStats(4, 2, 0)
+    assert player_stats.win_ratio() == 50
 
 
 def test_guess_score():
@@ -70,8 +60,44 @@ def test_guess_score():
     ]
 
 
-def test_print_guess_score(capfd):
-    print_guess_score(
+"""
+USER INTERFACE TESTS
+"""
+
+
+def test_display_title_art(capfd):
+    display_title_art()
+    out, err = capfd.readouterr()
+    assert (
+        out
+        == """
+ _ _ _ _____ _____ ____  __    _____
+| | | |     | __  |    \\|  |  |   __|
+| | | |  |  |    -|  |  |  |__|   __|
+|_____|_____|__|__|____/|_____|_____|
+"""
+    )
+
+
+def test_display_player_stats(capfd):
+    player_stats = PlayerStats(4, 2, 1)
+    display_player_stats(player_stats)
+    out, err = capfd.readouterr()
+    assert (
+        out
+        == """
+====================================
+            STATISTICS
+        4 Played, 50% Wins
+        Current Streak is 1
+====================================
+
+"""
+    )
+
+
+def test_display_guess_score(capfd):
+    display_guess_score(
         [{"A": "green"}, {"A": "green"}, {"A": "green"}, {"A": "green"}, {"A": "green"}]
     )
     out, err = capfd.readouterr()
@@ -85,8 +111,8 @@ def test_print_guess_score(capfd):
     )
 
 
-def test_print_all_guesses(capfd):
-    print_all_guesses(["AAAAA", "BBBBB"], "ZZZZZ")
+def test_display_all_guess_scores(capfd):
+    display_all_guess_scores(["AAAAA", "BBBBB"], "ZZZZZ")
     out, err = capfd.readouterr()
     assert (
         out
