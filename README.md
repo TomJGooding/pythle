@@ -3,7 +3,7 @@
 ![GitHub issues by-label](https://img.shields.io/github/issues/TomJGooding/python-project-template/bug?label=bug%20reports)
 ![GitHub issues by-label](https://img.shields.io/github/issues/TomJGooding/python-project-template/enhancement?label=feature%20requests)
 
-# Python Wordle
+# Pythle
 
 A terminal-based version of the popular word-guessing game Wordle, built with Python.
 
@@ -38,12 +38,12 @@ To learn how to install a Python file (package), refer to the [Installation Tuto
 Install using pip:
 
 ```
-pip install wordle
+pip install pythle
 ```
 
 ## Play
 
-To start the game, run `wordle` from the command line.
+To start the game, run `pythle` from the command line.
 
 Type your guess and hit the enter button to submit.
 
