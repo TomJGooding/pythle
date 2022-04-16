@@ -43,7 +43,11 @@ pip install pythle
 
 ## Play
 
-To start the game, run `pythle` from the command line.
+To start the game, run from the command line:
+
+```
+pythle
+```
 
 Type your guess and hit the enter button to submit.
 
