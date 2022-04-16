@@ -1,5 +1,5 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TomJGooding/pythle/Python%20application/main)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TomJGooding/pythle/pytester-cov%20workflow/main?label=coverage)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/TomJGooding/pythle/Python%20application/main?label=coverage)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/TomJGooding/pythle/pytester-cov/main?label=coverage)
 ![GitHub issues by-label](https://img.shields.io/github/issues/TomJGooding/pythle/bug?label=bug%20reports)
 ![GitHub issues by-label](https://img.shields.io/github/issues/TomJGooding/pythle/enhancement?label=feature%20requests)
 
