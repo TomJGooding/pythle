@@ -1,7 +1,7 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TomJGooding/python-project-template/Python%20application/main)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TomJGooding/python-project-template/pytester-cov%20workflow/main?label=coverage)
-![GitHub issues by-label](https://img.shields.io/github/issues/TomJGooding/python-project-template/bug?label=bug%20reports)
-![GitHub issues by-label](https://img.shields.io/github/issues/TomJGooding/python-project-template/enhancement?label=feature%20requests)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TomJGooding/pythle/Python%20application/main)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TomJGooding/pythle/pytester-cov%20workflow/main?label=coverage)
+![GitHub issues by-label](https://img.shields.io/github/issues/TomJGooding/pythle/bug?label=bug%20reports)
+![GitHub issues by-label](https://img.shields.io/github/issues/TomJGooding/pythle/enhancement?label=feature%20requests)
 
 # Pythle
 
@@ -9,7 +9,7 @@ A terminal-based version of the popular word-guessing game Wordle, built with Py
 
 Created as my first GitHub project!
 
-![screenshot](assets/images/python-wordle-screenshot.png)
+![screenshot](assets/images/pythle-screenshot.png)
 
 ## Table of Contents
 
