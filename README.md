@@ -1,48 +1,25 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TomJGooding/python-project-template/Python%20application?label=build)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TomJGooding/python-project-template/pytester-cov%20workflow?label=coverage)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TomJGooding/python-project-template/Python%20application/main)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TomJGooding/python-project-template/pytester-cov%20workflow/main?label=coverage)
 ![GitHub issues by-label](https://img.shields.io/github/issues/TomJGooding/python-project-template/bug?label=bug%20reports)
 ![GitHub issues by-label](https://img.shields.io/github/issues/TomJGooding/python-project-template/enhancement?label=feature%20requests)
 
 # Python Wordle
 
-A terminal-based version of the popular word-guessing game Wordle, built with Python. Created as my first GitHub project!
+A terminal-based version of the popular word-guessing game Wordle, built with Python. 
+
+Created as my first GitHub project!
 
 ![screenshot](assets/images/python-wordle-screenshot.png)
 
 ## Table of Contents
 
-<!--
-- [About](#about)
-  - [Built With](#built-with)
-- [Features](#features)
--->
-
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Usage](#usage)
 - [Contributing](#contributing)
-<!-- [Contributors](#contributors) -->
 - [Acknowledgements](#acknowledgements)
 - [Licence](#licence)
 
-<!--
-## About
-
-Provide a longer description of the project here.
-
-### Built With
-
-- [Python](https://www.python.org/)
-
-## Features
-
-If the project has a lot of features, list them here.
-
-- Feature 1
-- Feature 2
-- Feature 3
--->
 
 ## Getting Started
 
@@ -55,20 +32,6 @@ If you do not have Python, please install the latest 3.x version from [python.or
 ### Installation
 
 - [ ] TODO Add installation instructions
-
-## Usage
-
-<!--
-Use this space to show useful examples of how the project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
--->
-
-- [ ] TODO Add usage examples with screenshots
 
 ## Contributing
 
@@ -87,12 +50,6 @@ If you're looking for a way to contribute, you can scan through the existing iss
 
 Please take a moment to read the [Contribution Guidelines](CONTRIBUTING.md), to help make the process easy and effective for everyone involved.
 
-<!---
-## Contributors
-
-List your contributors, if any, with links to their GitHub profiles.
--->
-
 ## Acknowledgements
 
 <!---
@@ -101,6 +58,8 @@ If you used any third-party assets that require attribution, list the creators w
 If you followed tutorials, include links to those here as well.
 -->
 
+- [Al Sweigart](https://inventwithpython.com/) for his excellent series of books on learning Python, available for free!
+- [ArjanCodes](https://www.youtube.com/channel/UCVhQ2NnY5Rskt6UjCUkJ_DA) for [this YouTube video about game refactoring](https://www.youtube.com/watch?v=Cs9aDesDORc), which inspired me to try to improve my code.
 - [Programming with Alex](https://www.youtube.com/channel/UCTebDgj-GzOh3zo9Xf1vO4A/) for his [pytester-cov](https://github.com/marketplace/actions/pytester-cov) GitHub Action used to check code coverage in this project.
 
 ## Licence
