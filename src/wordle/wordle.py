@@ -1,14 +1,10 @@
-"""
-A terminal-based version of the popular word-guessing game Wordle, built with Python.
-Created as my first GitHub project!
-"""
 import os
 import pkgutil
 import random
 import sys
 
 
-def load_wordlist(file_name):
+def load_wordlist(file_name: str) -> list[str]:
     text = pkgutil.get_data(__name__, "data/" + file_name).decode()
     word_list = text.splitlines()
     return word_list
@@ -73,7 +69,7 @@ def main():
                 break
 
 
-def player_stats_str(games_played: int, wins: int, win_streak: int):
+def player_stats_str(games_played: int, wins: int, win_streak: int) -> str:
     if games_played != 0:
         win_ratio = round((wins / games_played) * 100)
     else:
@@ -87,7 +83,7 @@ def player_stats_str(games_played: int, wins: int, win_streak: int):
 """
 
 
-def guess_count_str(guesses: list[str]):
+def guess_count_str(guesses: list[str]) -> str:
     guess_count = len(guesses) + 1
     return f"({guess_count} / {MAX_GUESSES})"
 
@@ -95,10 +91,10 @@ def guess_count_str(guesses: list[str]):
 os.system("color")  # enables ansi escape characters in terminal
 
 # Assign Wordle colours to ANSI colour numbers,
-colours = {"green": "42", "yellow": "43", "blue": "44"}
+ansi_colours = {"green": "42", "yellow": "43", "blue": "44"}
 
 
-def guess_score(guess: str, solution: str):
+def guess_score(guess: str, solution: str) -> list[dict]:
     # Score player guess by assigning colour to letter/position
     guess_score = []
     for idx, char in enumerate(guess):
@@ -112,14 +108,14 @@ def guess_score(guess: str, solution: str):
     return guess_score
 
 
-def print_guess_score(guess_score):
+def print_guess_score(guess_score: list[dict]) -> None:
     # Print the guess scores to the terminal, adding colout with ansi escape characters
     for letter_score in guess_score:
         for letter, colour in letter_score.items():
-            print(f"\033[{colours[colour]}m {letter} \033[0;0m", end="")
+            print(f"\033[{ansi_colours[colour]}m {letter} \033[0;0m", end="")
 
 
-def print_all_guesses(guesses, solution):
+def print_all_guesses(guesses: list[str], solution: str) -> None:
     # Print all guess scores to the terminal
     for guess in guesses:
         print_guess_score(guess_score(guess, solution))
