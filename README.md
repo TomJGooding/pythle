@@ -16,6 +16,7 @@ Created as my first GitHub project!
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+- [Play](#play)
 - [Contributing](#contributing)
 - [Acknowledgements](#acknowledgements)
 - [Licence](#licence)
