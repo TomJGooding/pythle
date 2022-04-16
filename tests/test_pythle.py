@@ -1,4 +1,4 @@
-from wordle.wordle import (
+from pythle.pythle import (
     guess_score,
     display_guess_score,
     display_all_guess_scores,
