@@ -5,7 +5,7 @@
 
 # Python Wordle
 
-A terminal-based version of the popular word-guessing game Wordle, built with Python. 
+A terminal-based version of the popular word-guessing game Wordle, built with Python.
 
 Created as my first GitHub project!
 
@@ -16,10 +16,10 @@ Created as my first GitHub project!
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+- [Play](#play)
 - [Contributing](#contributing)
 - [Acknowledgements](#acknowledgements)
 - [Licence](#licence)
-
 
 ## Getting Started
 
@@ -33,7 +33,19 @@ If you do not have Python, please install the latest 3.x version from [python.or
 
 ### Installation
 
-- [ ] TODO Add installation instructions
+To learn how to install a Python file (package), refer to the [Installation Tutorial](https://packaging.python.org/en/latest/tutorials/installing-packages/) from PyPI.
+
+Install using pip:
+
+```
+pip install wordle
+```
+
+## Play
+
+To start the game, run `wordle` from the command line.
+
+Type your guess and hit the enter button to submit.
 
 ## Contributing
 
@@ -60,6 +72,7 @@ If you used any third-party assets that require attribution, list the creators w
 If you followed tutorials, include links to those here as well.
 -->
 
+- [Wordle](https://www.nytimes.com/games/wordle/index.html) by [Josh Wardle](https://www.powerlanguage.co.uk/)
 - [Al Sweigart](https://inventwithpython.com/) for his excellent series of books on learning Python, available for free!
 - [ArjanCodes](https://www.youtube.com/channel/UCVhQ2NnY5Rskt6UjCUkJ_DA) for [this YouTube video about game refactoring](https://www.youtube.com/watch?v=Cs9aDesDORc), which inspired me to try to improve my code.
 - [Programming with Alex](https://www.youtube.com/channel/UCTebDgj-GzOh3zo9Xf1vO4A/) for his [pytester-cov](https://github.com/marketplace/actions/pytester-cov) GitHub Action used to check code coverage in this project.
