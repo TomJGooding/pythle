@@ -3,9 +3,6 @@ from pythle.cli import (display_all_guess_scores, display_guess_score,
                         goodbye_message, lose_message, win_message)
 from pythle.player_stats import PlayerStats
 
-# TODO: get_player_guess,
-# TODO: get_player_continue,
-
 
 """ DISPLAY SCORE COLOURS TESTS """
 
