@@ -1,3 +1,4 @@
+[![PyPI](https://img.shields.io/pypi/v/pythle)](https://pypi.org/project/pythle/)
 [![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/TomJGooding/pythle/Python%20application/main)](https://github.com/TomJGooding/pythle/actions/workflows/python-app.yml?query=branch%3Amain)
 [![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/TomJGooding/pythle/pytester-cov/main?label=coverage)](https://github.com/TomJGooding/pythle/actions/workflows/pytester-cov.yml?query=branch%3Amain)
 [![GitHub issues by-label](https://img.shields.io/github/issues/TomJGooding/pythle/bug?label=bug%20reports)](https://github.com/TomJGooding/pythle/labels/bug)
@@ -32,8 +33,6 @@ Before you go any further, [ensure you have Python and that the expected version
 If you do not have Python, please install the latest 3.x version from [python.org](https://www.python.org/) or refer to the [Installing Python](https://docs.python-guide.org/starting/installation/#installation) section of the Hitchhiker’s Guide to Python.
 
 ### Installation
-
-#### This project is still under development so installation will not work yet!
 
 To learn how to install a Python file (package), refer to the [Installation Tutorial](https://packaging.python.org/en/latest/tutorials/installing-packages/) from PyPI.
 
