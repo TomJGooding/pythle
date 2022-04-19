@@ -9,8 +9,6 @@ A terminal-based version of the popular word-guessing game Wordle, built with Py
 
 Created as my first GitHub project!
 
-![screenshot](assets/images/pythle-screenshot.png)
-
 ## Table of Contents
 
 - [Getting Started](#getting-started)
@@ -32,6 +30,8 @@ Before you go any further, [ensure you have Python and that the expected version
 If you do not have Python, please install the latest 3.x version from [python.org](https://www.python.org/) or refer to the [Installing Python](https://docs.python-guide.org/starting/installation/#installation) section of the Hitchhiker’s Guide to Python.
 
 ### Installation
+
+#### This project is still under development so installation will not work yet!
 
 To learn how to install a Python file (package), refer to the [Installation Tutorial](https://packaging.python.org/en/latest/tutorials/installing-packages/) from PyPI.
 
