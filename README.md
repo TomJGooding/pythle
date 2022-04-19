@@ -78,7 +78,7 @@ If you followed tutorials, include links to those here as well.
 
 - [Wordle](https://www.nytimes.com/games/wordle/index.html) by [Josh Wardle](https://www.powerlanguage.co.uk/)
 - [Al Sweigart](https://inventwithpython.com/) for his excellent series of books on learning Python, available for free!
-- [ArjanCodes](https://www.youtube.com/channel/UCVhQ2NnY5Rskt6UjCUkJ_DA) for [this YouTube video about game refactoring](https://www.youtube.com/watch?v=Cs9aDesDORc), which inspired me to try to improve my code.
+- [ArjanCodes](https://www.youtube.com/channel/UCVhQ2NnY5Rskt6UjCUkJ_DA) and his [Code Roast YouTube videos](https://www.youtube.com/playlist?list=PLC0nd42SBTaNVxWLci4TPoytfzkXxFhCg) for inspiring me to try to write better code.
 - [Programming with Alex](https://www.youtube.com/channel/UCTebDgj-GzOh3zo9Xf1vO4A/) for his [pytester-cov](https://github.com/marketplace/actions/pytester-cov) GitHub Action used to check code coverage in this project.
 
 ## Licence
