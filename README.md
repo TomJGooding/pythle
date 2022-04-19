@@ -9,6 +9,8 @@ A terminal-based version of the popular word-guessing game Wordle, built with Py
 
 Created as my first GitHub project!
 
+![pythle-screenshot](assets/images/pythle-screenshot.png)
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
