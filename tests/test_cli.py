@@ -37,6 +37,8 @@ def test_display_all_guess_scores(capfd):
 
 """ GET PLAYER INPUTS TESTS """
 
+# TODO: get_player_guess,
+# TODO: get_player_continue
 
 """ DISPLAY STATISTICS TESTS """
 
