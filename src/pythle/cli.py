@@ -1,6 +1,7 @@
-from pythle.player_stats import PlayerStats
-from pythle.guess import Guess
 import os
+
+from pythle.guess import Guess
+from pythle.player_stats import PlayerStats
 
 """ DISPLAY SCORE COLOURS """
 

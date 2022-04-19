@@ -1,9 +1,9 @@
 import random
 import sys
-from pythle.player_stats import PlayerStats
-from pythle.load_wordlist import load_wordlist
-from pythle import cli
 
+from pythle import cli
+from pythle.load_wordlist import load_wordlist
+from pythle.player_stats import PlayerStats
 
 WORDS = load_wordlist("words.txt")
 SOLUTIONS = load_wordlist("solutions.txt")
