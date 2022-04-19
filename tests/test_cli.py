@@ -1,15 +1,10 @@
+from pythle.cli import (display_all_guess_scores, display_guess_score,
+                        display_player_stats, display_title_art,
+                        goodbye_message, lose_message, win_message)
 from pythle.player_stats import PlayerStats
-from pythle.cli import (
-    display_guess_score,
-    display_all_guess_scores,
-    # TODO: get_player_guess,
-    # TODO: get_player_continue,
-    display_player_stats,
-    display_title_art,
-    goodbye_message,
-    win_message,
-    lose_message,
-)
+
+# TODO: get_player_guess,
+# TODO: get_player_continue,
 
 
 """ DISPLAY SCORE COLOURS TESTS """
