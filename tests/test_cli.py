@@ -1,7 +1,19 @@
-from pythle.cli import (display_all_guess_scores, display_guess_score,
-                        display_player_stats, display_title_art,
-                        goodbye_message, lose_message, win_message)
+from pythle.cli import (
+    display_all_guess_scores,
+    display_guess_score,
+    display_player_stats,
+    display_title_art,
+    get_player_continue,
+    get_player_guess,
+    goodbye_message,
+    lose_message,
+    win_message,
+)
 from pythle.player_stats import PlayerStats
+from pythle.pythle import WORDS
+from _pytest.monkeypatch import MonkeyPatch
+
+monkeypatch = MonkeyPatch()
 
 
 """ DISPLAY SCORE COLOURS TESTS """
@@ -35,10 +47,32 @@ def test_display_all_guess_scores(capfd):
     )
 
 
-""" GET PLAYER INPUTS TESTS """
+""" PLAYER INPUTS TESTS """
 
-# TODO: get_player_guess,
-# TODO: get_player_continue
+
+def test_get_player_guess_valid_word(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda: "APPLE")
+    result = get_player_guess([], 6, WORDS)
+    assert result == "APPLE"
+
+
+def test_get_player_guess_if_q(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda: "Q")
+    result = get_player_guess([], 6, WORDS)
+    assert result == "Q"
+
+
+def test_get_player_continue_no(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda: "N")
+    result = get_player_continue()
+    assert result is False
+
+
+def test_get_player_continue_yes(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda: "Y")
+    result = get_player_continue()
+    assert result is True
+
 
 """ DISPLAY STATISTICS TESTS """
 

@@ -1,6 +1,11 @@
 from pythle.guess import Guess
 
 
+def test_guess_init():
+    guess = Guess("APPLE")
+    assert guess.guess == "APPLE"
+
+
 def test_guess_score():
     assert Guess.guess_score("AAAAA", "AAAAA") == [
         {"A": "green"},
