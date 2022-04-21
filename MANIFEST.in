@@ -1,3 +1,4 @@
 include README.md
-include docs/*.txt
-include assets/img/*.png
+graft tests
+graft docs
+graft assets
