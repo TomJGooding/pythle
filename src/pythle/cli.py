@@ -1,11 +1,15 @@
 import os
+import platform
 
 from pythle.guess import Guess
 from pythle.player_stats import PlayerStats
 
 """ DISPLAY SCORE COLOURS """
 
-os.system("color")  # enables ANSI colors in Windows terminal
+if platform.system() == "Windows":
+    # enables ANSI colors in Windows terminal
+    os.system("color")
+
 ansi_colours = {"green": "42", "yellow": "43", "blue": "44"}
 
 
