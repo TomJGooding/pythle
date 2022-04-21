@@ -1,5 +1,2 @@
-include LICENSE
-include README.md
-graft tests
-graft data
-graft assets
+graft pythle/data
+global-exclude *.pyc
