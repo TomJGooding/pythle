@@ -1,2 +1,3 @@
-graft pythle/data
-global-exclude *.pyc
+graft src
+global-exclude __pycache__
+global-exclude *.py[co]
