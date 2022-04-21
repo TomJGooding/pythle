@@ -1,4 +1,5 @@
+include LICENSE
 include README.md
 graft tests
-graft docs
+graft data
 graft assets
